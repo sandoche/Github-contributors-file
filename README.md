@@ -1,6 +1,6 @@
 # Github contributors file
 
-A javascript library to get the contributors for any specific file in Github
+A javascript library to get individual file contributors from Github.
 
 ## Feature
 

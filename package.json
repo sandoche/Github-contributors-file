@@ -1,7 +1,7 @@
 {
   "name": "github-contributors-file",
   "version": "1.0.0",
-  "description": "A javascript library to get the contributors for any specific file in Github",
+  "description": "A javascript library to get individual file contributors from Github",
   "main": "lib/github-contributors-file.js",
   "scripts": {
     "build": "webpack --env dev && webpack --env build && npm run test",
