@@ -1,7 +1,7 @@
 export default function getContributors(owner, repository, filePath, token) {
   return new Promise((resolve, reject) => {
     try {
-      const url = `https://api.github.com/repos/${owner}/${repository}/commits?path=${filePath}&?access_token=${token}`;
+      const url = `https://api.github.com/repos/${owner}/${repository}/commits?path=${filePath}&access_token=${token}`;
 
       fetch(url)
         .then((response) => {

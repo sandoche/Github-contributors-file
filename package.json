@@ -1,6 +1,6 @@
 {
   "name": "github-contributors-file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A javascript library to get individual file contributors from Github",
   "main": "lib/github-contributors-file.js",
   "scripts": {
