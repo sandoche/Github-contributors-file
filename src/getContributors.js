@@ -6,16 +6,20 @@ export default function getContributors(owner, repository, filePath) {
       return response.json();
     })
     .then((json) => {
-      // const authorsLogin = [];
+      const authorsLogin = [];
       const contributors = json.map((item) => {
-        authorsLogin.push(item.author.login);
-        // if (!authorsLogin.includes(item.author.login)) {
-          return {
+        let result = null;
+        if (!authorsLogin.includes(item.author.login)) {
+          result = {
             login: item.author.login,
             avatar_url: item.author.avatar_url,
             url: item.author.html_url
           }
-        // }
+        }
+        authorsLogin.push(item.author.login);
+        return result;
+      }).filter(item => {
+        return item != null;
       });
       resolve(contributors);
     })
