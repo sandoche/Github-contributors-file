@@ -16,7 +16,7 @@ A javascript library to get individual file contributors from Github.
 
 ## To do
 - [x] Getting started
-- [ ] Write the library
-- [ ] Write a test
+- [x] Write the library
+- [x] Write a test
 - [ ] Write the documentation
 - [ ] Publish
