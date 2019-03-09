@@ -17,9 +17,9 @@ npm install github-contributors-file
 ### Using it
 
 * Import getContributors
-* Use the following function `getContributors(owner, repositoryName, filePath).then(callbackFunction)`
+* Use the following function `getContributors(owner, repositoryName, filePath, token).then(callbackFunction)`
+* The github token is optional (but it will increase the api limitations)
 * See examples below
-
 
 ```js
 import getContributors from 'github-contributors-file';
