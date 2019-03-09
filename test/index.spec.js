@@ -1,7 +1,7 @@
 /* global describe, it, before */
 
 import chai from 'chai';
-import {Cat, Dog} from '../lib/github-contributors-file.js';
+import getContributors from '../lib/github-contributors-file.js';
 
 chai.expect();
 
@@ -9,24 +9,12 @@ const expect = chai.expect;
 
 let lib;
 
-describe('Given an instance of my Cat library', () => {
-  before(() => {
-    lib = new Cat();
-  });
-  describe('when I need the name', () => {
-    it('should return the name', () => {
-      expect(lib.name).to.be.equal('Cat');
-    });
-  });
-});
-
-describe('Given an instance of my Dog library', () => {
-  before(() => {
-    lib = new Dog();
-  });
-  describe('when I need the name', () => {
-    it('should return the name', () => {
-      expect(lib.name).to.be.equal('Dog');
+describe('Given an owner, a repository name and a file path', () => {
+  describe('When I need the contributors', () => {
+    it('should return sandoche', () => {
+      getContributors('sandoche', 'Jekyll-webpack-boilerplate', '_i18n/en.yml').then((answer) => {
+        expect(answer[0].login).to.be.equal('sandoche');
+      })
     });
   });
 });
