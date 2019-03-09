@@ -1,4 +1,4 @@
-# Github contributors file
+# Github contributors file ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 A javascript library to get individual file contributors from Github.
 
@@ -66,10 +66,10 @@ getContributors('naming-convention', 'naming-convention-design', 'README.md').th
 * `yarn test` or `npm run test` - it runs the tests :)
 * `yarn test:watch` or `npm run test:watch` - same as above but in a watch mode
 
-## To do
-- [x] Getting started
-- [x] Write the library
-- [x] Write a test
-- [x] Write the documentation
-- [ ] Check for Github token
-- [ ] Publish
+## Buy me a beer 🍺
+If you like this project, feel free to donate:
+* Paypal: https://www.paypal.me/kanbanote
+* Bitcoin: 19JiNZ1LkMaz57tewqJaTg2hQWH4RgW4Yp
+* Ethereum: 0xded81fa4624e05339924355fe3504ba9587d5419
+* Monero: 43jqzMquW2q989UKSrB2YbeffhmJhbYb2Yxu289bv7pLRh4xVgMKj5yTd52iL6x1dvCYs9ERg5biHYxMjGkpSTs6S2jMyJn
+* Motive: MOTIV-25T5-SD65-V7LJ-BBWRD (Get Motive Now: https://motive.network)
